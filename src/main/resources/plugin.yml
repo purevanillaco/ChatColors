@@ -1,10 +1,11 @@
-name: ChatColorPicker
-main: co.purevanilla.mcplugins.ChatColorPicker.Main
-version: 1.0.0
-api-version: 1.13
+main: co.purevanilla.mcplugins.chatcolors.ChatColors
+name: ChatColors
 author: quiquelhappy
+version: 1.0.0
+api-version: 1.18
+softdepend: ["PlaceholderAPI"]
 commands:
   chatcolor:
-    usage: "/chatcolor <color>"
-    permission: chatcolorpicker.use
-    description: "allows you to change your message colors"
+    permission: chatcolor.menu
+    description: "set your chat color"
+    usage: /chatcolor

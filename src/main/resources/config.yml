@@ -1,6 +1,26 @@
 colors:
-  ffd4d4: "pink-ish"
-  d4ffe4: "green-ish"
-  d8c4ff: "purple-ish"
-  c4cdff: "blue-ish"
-  fff3e0: "orange-ish"
+  # default should always be at the top
+  # for creating the custom text messages: https://www.minecraftjson.com/
+  default:
+    hex: "#ffffff"
+    permission: none  # the color 'default' never does permission checks
+    noPermission: ""
+  # other colors
+  ooh pinky:
+    hex: "#fc038c"
+    permission: voter  # would be: chatcolor.color.voter
+    noPermission: '["",{"text":"Unlock with ","italic":true,"color":"gray"},{"text":"/vote","italic":true,"underlined":true,"color":"light_purple","clickEvent":{"action":"run_command","value":"/vote"}}]'
+
+  # you can repeat permission nodes
+  le orange:
+    hex: "#fc5e03"
+    permission: vip   # would be: chatcolor.color.vip
+    noPermission: '["",{"text":"Unlock with ","italic":true,"color":"gray"},{"text":"/boost","italic":true,"underlined":true,"color":"light_purple","clickEvent":{"action":"open_url","value":"https://purevanilla.co/store/simply"}}]'
+  le green:
+    hex: "#03fc6f"
+    permission: vip   # would be: chatcolor.color.vip
+    noPermission: '["",{"text":"Unlock with ","italic":true,"color":"gray"},{"text":"/boost","italic":true,"underlined":true,"color":"light_purple","clickEvent":{"action":"open_url","value":"https://purevanilla.co/store/simply"}}]'
+gui:
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  hasPermission: POLISHED_BLACKSTONE_BUTTON
+  noPermission: BARRIER

@@ -1,2 +1,1 @@
-# players using the default color won't show up here
-# uuid(no-dashes).colorname
+player: {}
